@@ -1,0 +1,16 @@
+[Unit]
+Description=Gmail Watcher (Textual UI)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=daisy
+WorkingDirectory=/home/daisy/gmail
+ExecStart=/home/daisy/gmail/start_gmail_watcher.sh
+Restart=on-failure
+RestartSec=2
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
