@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-APP_DIR="/home/daisy/gmail"
+APP_DIR="/home/satisduyuru/gmail"
 VENV_PY="$APP_DIR/venv/bin/python"
 APP_FILE="$APP_DIR/uı.py"
 
